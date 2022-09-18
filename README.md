@@ -4,8 +4,7 @@ migração com alembic e sqlacodegen
 ### instalação
 
 ```
-  pip install alembic
-  pip install sqlcodegen
+  pip install alembic sqlacodegen SQLAlchemy
 ```
 
 ## gerando arquivos do alembic no diretório escolhido ou só '.' :
