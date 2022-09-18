@@ -4,7 +4,8 @@ migração com alembic e sqlacodegen
 ### instalação
 
 ```
-  pip instal alembic
+  pip install alembic
+  pip install sqlcodegen
 ```
 
 ## gerando arquivos do alembic no diretório escolhido ou só '.' :
@@ -61,6 +62,16 @@ def downgrade() -> None:
 ```
 
 ## Para criar uma geração de migrações automática sem precisar do ORM da versão se cria:
+
+### Escolha uma pasta e coloque:
+
+```
+sqlacodegen sqlite:///user.db > user.py
+ou
+sqlacodegen --generator dataclasses sqlite:///user.db > user.py
+```
+Vai ser montado um codigo sqlalchemy com base no data base
+
 > Exemplo: models.py
 
 ```python
